@@ -26,7 +26,7 @@ var fieldContentRegExp = /^[\u0009\u0020-\u007e\u0080-\u00ff]+$/;
  * RegExp to match Same-Site cookie attribute value.
  */
 
-var sameSiteRegExp = /^(?:lax|strict)$/i
+var sameSiteRegExp = /^(?:lax|strict|none)$/i
 
 function Cookies(request, response, options) {
   if (!(this instanceof Cookies)) return new Cookies(request, response, options)
